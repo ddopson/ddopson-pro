@@ -1,7 +1,7 @@
 DdopsonPro::Application.routes.draw do
 
   match ':action' => 'static#:action'
-
+  match '/assets/:foo/gah.tgz' => redirect {'/assets/gah.tgz'}
 
 
 
